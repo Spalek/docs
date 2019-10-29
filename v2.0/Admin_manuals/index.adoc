@@ -34,10 +34,11 @@ include::../General/Document-metadata.adoc[]
 [width="100%",options="header",cols="1,2,3"]
 |===
 |  *Date* | *Editor* | *Comments*
-| 2017-04-24 | Jon Herrmann | document converted from GitHub wiki
-| 2017-06-21 | Clemens Portele | editorial updates
+| 2017-04-24 | Jon Herrmann | Document converted from GitHub wiki
+| 2017-06-21 | Clemens Portele | Editorial updates
 | 2017-06-24 | Jon Herrmann | FAQ added
 | 2017-09-28 | Jon Herrmann | Manual installation instructions for GmlGeoX removed as it is now installed by the BSX test driver
+| 2019-10-28 | Christoph Spalek | Editorial updates
 |===
 
 <<<

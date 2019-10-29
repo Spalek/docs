@@ -19,7 +19,7 @@ configure the etf directory.
 filesystems ('C:/etf', 'D:/etf', etc.), the file will be used to configure
 the etf directory.
 3. If a etf-config.properties file exists in the 'etf' subfolder of
-the 'My Documents folder' (%DEFAULTUSERPROFILE%) on _Windows_, the file will
+the home directory ('C:/Users/<your_username>') (%DEFAULTUSERPROFILE%) on _Windows_, the file will
 be used to configure the etf directory.
 4. If on _Windows_ the etf-config.properties file exists in the
 ProgramData folder ( %ALLUSERSPROFILE% ), the file will be used to configure

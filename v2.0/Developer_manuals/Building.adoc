@@ -34,9 +34,10 @@ include::../General/Document-metadata.adoc[]
 [width="100%",options="header",cols="1,2,3"]
 |===
 |  *Date* | *Editor* | *Comments*
-| 2017-05-02 | Jon Herrmann | document created
-| 2017-06-21 | Clemens Portele | editorial updates
+| 2017-05-02 | Jon Herrmann | Document created
+| 2017-06-21 | Clemens Portele | Editorial updates
 | 2017-07-12 | Jon Herrmann | Test driver development section
+| 2019-10-24 | Christoph Spalek | Editorial updates
 |===
 
 <<<

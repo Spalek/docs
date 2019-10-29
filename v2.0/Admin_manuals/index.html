@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.6.2">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <title>Administration of an ETF validator</title>
 <link rel="stylesheet" href="../stylesheets/etf.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="../stylesheets/pygments-autumn.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon" />
 </head>
 <body class="book toc2 toc-left">
@@ -56,7 +55,7 @@
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<table class="tableblock frame-none grid-none spread">
+<table class="tableblock frame-none grid-none stretch">
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -74,7 +73,7 @@ Testing framework for spatial data and services</span></p></td>
 <h1 id="_administration_of_an_etf_validator" class="sect0">Administration of an ETF validator</h1>
 <div class="openblock partintro">
 <div class="content">
-<table class="tableblock frame-topbot grid-none spread">
+<table class="tableblock frame-topbot grid-none stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -115,7 +114,7 @@ Testing framework for spatial data and services</span></p></td>
 <div class="sect1">
 <h2 id="_changelog">Changelog</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 33.3333%;">
@@ -132,12 +131,12 @@ Testing framework for spatial data and services</span></p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2017-04-24</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Jon Herrmann</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">document converted from GitHub wiki</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document converted from GitHub wiki</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2017-06-21</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Clemens Portele</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">editorial updates</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Editorial updates</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2017-06-24</p></td>
@@ -148,6 +147,11 @@ Testing framework for spatial data and services</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2017-09-28</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Jon Herrmann</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Manual installation instructions for GmlGeoX removed as it is now installed by the BSX test driver</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2019-10-28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Christoph Spalek</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Editorial updates</p></td>
 </tr>
 </tbody>
 </table>
@@ -210,8 +214,8 @@ Testing framework for spatial data and services</span></p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="properties">-Dfile.encoding=UTF-8
--Djavax.servlet.request.encoding=UTF-8</code></pre>
+<pre class="pygments highlight"><code data-lang="properties"><span></span><span class="tok-na">-Dfile.encoding</span><span class="tok-o">=</span><span class="tok-s">UTF-8</span>
+<span class="tok-na">-Djavax.servlet.request.encoding</span><span class="tok-o">=</span><span class="tok-s">UTF-8</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -223,9 +227,9 @@ parameter http.proxyHost must be added:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="properties">-Dfile.encoding=UTF-8
--Djavax.servlet.request.encoding=UTF-8
--Dhttp.proxyHost=proxyserver.orgdomain</code></pre>
+<pre class="pygments highlight"><code data-lang="properties"><span></span><span class="tok-na">-Dfile.encoding</span><span class="tok-o">=</span><span class="tok-s">UTF-8</span>
+<span class="tok-na">-Djavax.servlet.request.encoding</span><span class="tok-o">=</span><span class="tok-s">UTF-8</span>
+<span class="tok-na">-Dhttp.proxyHost</span><span class="tok-o">=</span><span class="tok-s">proxyserver.orgdomain</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -239,7 +243,7 @@ parameter http.proxyHost must be added:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="CMD">set JAVA_OPTS=-Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8</code></pre>
+<pre class="pygments highlight"><code data-lang="CMD"><span></span>set JAVA_OPTS=-Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -248,7 +252,7 @@ parameter http.proxyHost must be added:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="CMD">set JAVA_OPTS=-Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8 -Dhttp.proxyHost=proxyserver.orgdomain</code></pre>
+<pre class="pygments highlight"><code data-lang="CMD"><span></span>set JAVA_OPTS=-Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8 -Dhttp.proxyHost=proxyserver.orgdomain</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -270,12 +274,12 @@ parameter http.proxyHost must be added:</p>
 <p>Either copy the etf-webapp.war file to <strong>TOMCAT_INSTALLATION_DIRECTORY\webapps</strong> or deploy the file using the Tomcat manager. If the manager is used, make sure that <strong>max-file-size</strong> and <strong>max-request-size</strong> are set to at least 157286400 (150 Megabytes) in the <strong>TOMCAT_INSTALLATION_DIRECTORY\webapps\manager\WEB-INF\web.xml</strong> file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml">    &lt;multipart-config&gt;
-      &lt;!-- 150MB max --&gt;
-      &lt;max-file-size&gt;157286400&lt;/max-file-size&gt;
-      &lt;max-request-size&gt;157286400&lt;/max-request-size&gt;
-      &lt;file-size-threshold&gt;0&lt;/file-size-threshold&gt;
-    &lt;/multipart-config&gt;</code></pre>
+<pre class="pygments highlight"><code data-lang="xml"><span></span>    <span class="tok-nt">&lt;multipart-config&gt;</span>
+      <span class="tok-c">&lt;!-- 150MB max --&gt;</span>
+      <span class="tok-nt">&lt;max-file-size&gt;</span>157286400<span class="tok-nt">&lt;/max-file-size&gt;</span>
+      <span class="tok-nt">&lt;max-request-size&gt;</span>157286400<span class="tok-nt">&lt;/max-request-size&gt;</span>
+      <span class="tok-nt">&lt;file-size-threshold&gt;</span>0<span class="tok-nt">&lt;/file-size-threshold&gt;</span>
+    <span class="tok-nt">&lt;/multipart-config&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -341,7 +345,7 @@ distributions it is located at <strong>/opt/tomcat/</strong>.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash">export JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8"</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">export</span> <span class="tok-nv">JAVA_OPTS</span><span class="tok-o">=</span><span class="tok-s2">&quot;</span><span class="tok-nv">$JAVA_OPTS</span><span class="tok-s2"> -Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8&quot;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -350,7 +354,7 @@ parameter http.proxyHost must be added:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash">export JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8 -Dhttp.proxyHost=proxyserver.orgdomain"</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">export</span> <span class="tok-nv">JAVA_OPTS</span><span class="tok-o">=</span><span class="tok-s2">&quot;</span><span class="tok-nv">$JAVA_OPTS</span><span class="tok-s2"> -Dfile.encoding=UTF-8 -Djavax.servlet.request.encoding=UTF-8 -Dhttp.proxyHost=proxyserver.orgdomain&quot;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -374,12 +378,12 @@ parameter http.proxyHost must be added:</p>
 <p>Either copy the etf-webapp.war file to <strong>TOMCAT_INSTALLATION_DIRECTORY/webapps</strong> or deploy the file using the Tomcat manager. If the manager is used, make sure that <strong>max-file-size</strong> and <strong>max-request-size</strong> are set to at least 157286400 (150 Megabytes) in the <strong>TOMCAT_INSTALLATION_DIRECTORY/webapps/manager/WEB-INF/web.xml</strong> file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml">    &lt;multipart-config&gt;
-      &lt;!-- 150MB max --&gt;
-      &lt;max-file-size&gt;157286400&lt;/max-file-size&gt;
-      &lt;max-request-size&gt;157286400&lt;/max-request-size&gt;
-      &lt;file-size-threshold&gt;0&lt;/file-size-threshold&gt;
-    &lt;/multipart-config&gt;</code></pre>
+<pre class="pygments highlight"><code data-lang="xml"><span></span>    <span class="tok-nt">&lt;multipart-config&gt;</span>
+      <span class="tok-c">&lt;!-- 150MB max --&gt;</span>
+      <span class="tok-nt">&lt;max-file-size&gt;</span>157286400<span class="tok-nt">&lt;/max-file-size&gt;</span>
+      <span class="tok-nt">&lt;max-request-size&gt;</span>157286400<span class="tok-nt">&lt;/max-request-size&gt;</span>
+      <span class="tok-nt">&lt;file-size-threshold&gt;</span>0<span class="tok-nt">&lt;/file-size-threshold&gt;</span>
+    <span class="tok-nt">&lt;/multipart-config&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -432,7 +436,7 @@ the etf directory.</p>
 </li>
 <li>
 <p>If a etf-config.properties file exists in the 'etf' subfolder of
-the 'My Documents folder' (%DEFAULTUSERPROFILE%) on <em>Windows</em>, the file will
+the home directory ('C:/Users/&lt;your_username&gt;') (%DEFAULTUSERPROFILE%) on <em>Windows</em>, the file will
 be used to configure the etf directory.</p>
 </li>
 <li>
@@ -483,153 +487,153 @@ subfolder '~/.etf'.</p>
 <h3 id="ETF-config-file">3.2. ETF configuration properties file</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="properties">#########################################
-# ETF CONFIGURATION PROPERTY FILE
-#########################################
+<pre class="pygments highlight"><code data-lang="properties"><span></span><span class="tok-c">#########################################</span>
+<span class="tok-c"># ETF CONFIGURATION PROPERTY FILE</span>
+<span class="tok-c">#########################################</span>
 
-# Version of the property path, used for backward compatibility.
-# (do not modify unless you know what you are doing)
-etf.config.properties.version = 2
-
-
-#########################################
-## General properties
-#########################################
-
-# Modify the base URL which points to the deployed web application.
-# The URL is used to reference this ETF instance from the Test Reports.
-# Example: http://yourserver/etf-webapp
-etf.webapp.base.url = http://localhost:8080/etf-webapp
-
-# Restrict cross-origin HTTP requests for browsers, see
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
-# for more information.
-# Default: taken from etf.webapp.base.url
-# etf.api.allow.origin = *
-
-# An optional branding text which is shown in the header
-# etf.branding.text =
-
-# Max file upload size for test data in bytes.
-# By default the max upload size is estimated based on presumable free memory
-# during the start of the application.
-# Hint: 524288000 bytes are 500 MB
-# Default: auto
-# etf.max.upload.size = auto
-
-# Maximum size of the Test Object data in bytes.
-# As compressed files can be uploaded and the maximum file upload size
-# is different from the size of the extracted test files, this property
-# ensures that the specified limit is not exceeded.
-# Default: 5368709120 (5 GB)
-# etf.testobject.max.size = 5368709120
-
-# Expiration time for temporary Test Objects in minutes. After the time has
-# elapsed, the test objects and test data are deleted.
-# To deactivate this feature and keep all Test Objects, the property
-# must be changed to the value 0.
-# Default: 480 (8 hours)
-# etf.testobject.temporary.lifetime.expiration = 480
-
-# Expiration time for Test Reports in minutes. After the time has elapsed,
-# the reports are deleted.
-# To deactivate this feature and keep all Test Reports, the property
-# must be changed to the value 0.
-# Default: 11520 (8 days)
-# etf.testreports.lifetime.expiration = 11520
-
-# Allow access to private networks. Checked when
-# a new webservice test object is created. "false" is recommended in public
-# deployments.
-# Default: false
-# etf.testobject.allow.privatenet.access = false
-
-# Recreate the internal BaseX configuration file (.basex) on startup. "true" is
-# recommended.
-# Default: true
-# etf.bsx.recreate.config = true
-
-# Possible values default/simplified . A simplified workflow enables the user
-# to start a test run without creating a test object.
-# Default: simplified
-# etf.workflows = simplified
-
-# Help to improve our application by automatically reporting internal errors
-# (last user action, error message and stacktrace) to interactive instruments through
-# the third party service platform opbeat (see https://opbeat.com/about for more information).
-# Default: false
-# etf.errors.autoreport = false
+<span class="tok-c"># Version of the property path, used for backward compatibility.</span>
+<span class="tok-c"># (do not modify unless you know what you are doing)</span>
+<span class="tok-na">etf.config.properties.version</span> <span class="tok-o">=</span> <span class="tok-s">2</span>
 
 
-##################################################################################
-## Contact, legal notice, privacy statement
-##################################################################################
-#
-# Please note: you can add multiple lines by using the \ character at the end
-# of the line.
-#
+<span class="tok-c">#########################################</span>
+<span class="tok-c">## General properties</span>
+<span class="tok-c">#########################################</span>
 
-# Contact
-# etf.meta.contact.text = &lt;p&gt;Operator A&lt;/p&gt; \
-#                    &lt;p&gt;X Avenue&lt;/p&gt; \
-#                    &lt;p&gt;Fort Lauderdale&lt;/p&gt; \
-#                    &lt;p&gt;Broward County&lt;/p&gt; \
-#                    &lt;p&gt;Florida, USA&lt;/p&gt; \
-#                    &lt;br&gt;\
-#                    &lt;p&gt;Email: nielsen@a.com&lt;/p&gt;
+<span class="tok-c"># Modify the base URL which points to the deployed web application.</span>
+<span class="tok-c"># The URL is used to reference this ETF instance from the Test Reports.</span>
+<span class="tok-c"># Example: http://yourserver/etf-webapp</span>
+<span class="tok-na">etf.webapp.base.url</span> <span class="tok-o">=</span> <span class="tok-s">http://localhost:8080/etf-webapp</span>
 
-# Disclaimer shown under Legal notice
-# etf.meta.legalnotice.disclaimer.text = Disclaimer ...
+<span class="tok-c"># Restrict cross-origin HTTP requests for browsers, see</span>
+<span class="tok-c"># https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS</span>
+<span class="tok-c"># for more information.</span>
+<span class="tok-c"># Default: taken from etf.webapp.base.url</span>
+<span class="tok-c"># etf.api.allow.origin = *</span>
 
-# Copyright notice only shown under Legal notice if Disclaimer is set!
-# etf.meta.legalnotice.copyrightnotice.text = Copyright notice ...
+<span class="tok-c"># An optional branding text which is shown in the header</span>
+<span class="tok-c"># etf.branding.text =</span>
 
-# Privacy statement
-# etf.meta.privacystatement.text = Privacy statement ...
+<span class="tok-c"># Max file upload size for test data in bytes.</span>
+<span class="tok-c"># By default the max upload size is estimated based on presumable free memory</span>
+<span class="tok-c"># during the start of the application.</span>
+<span class="tok-c"># Hint: 524288000 bytes are 500 MB</span>
+<span class="tok-c"># Default: auto</span>
+<span class="tok-c"># etf.max.upload.size = auto</span>
 
-# The link to the help page can be overridden with this property.
-# Default: http://docs.etf-validator.net
-# etf.help.page = http://docs.etf-validator.net
+<span class="tok-c"># Maximum size of the Test Object data in bytes.</span>
+<span class="tok-c"># As compressed files can be uploaded and the maximum file upload size</span>
+<span class="tok-c"># is different from the size of the extracted test files, this property</span>
+<span class="tok-c"># ensures that the specified limit is not exceeded.</span>
+<span class="tok-c"># Default: 5368709120 (5 GB)</span>
+<span class="tok-c"># etf.testobject.max.size = 5368709120</span>
 
-#########################################
-## Directory properties
-#########################################
+<span class="tok-c"># Expiration time for temporary Test Objects in minutes. After the time has</span>
+<span class="tok-c"># elapsed, the test objects and test data are deleted.</span>
+<span class="tok-c"># To deactivate this feature and keep all Test Objects, the property</span>
+<span class="tok-c"># must be changed to the value 0.</span>
+<span class="tok-c"># Default: 480 (8 hours)</span>
+<span class="tok-c"># etf.testobject.temporary.lifetime.expiration = 480</span>
 
-# For all directories, paths can be set that are either absolute or
-# relative to the etf.dir. If the etf.dir is not specified it is
-# set to ../ relative to this configuration file.
+<span class="tok-c"># Expiration time for Test Reports in minutes. After the time has elapsed,</span>
+<span class="tok-c"># the reports are deleted.</span>
+<span class="tok-c"># To deactivate this feature and keep all Test Reports, the property</span>
+<span class="tok-c"># must be changed to the value 0.</span>
+<span class="tok-c"># Default: 11520 (8 days)</span>
+<span class="tok-c"># etf.testreports.lifetime.expiration = 11520</span>
 
-# Optional base path
-# Default: ../
-# etf.dir = /data/etf
+<span class="tok-c"># Allow access to private networks. Checked when</span>
+<span class="tok-c"># a new webservice test object is created. &quot;false&quot; is recommended in public</span>
+<span class="tok-c"># deployments.</span>
+<span class="tok-c"># Default: false</span>
+<span class="tok-c"># etf.testobject.allow.privatenet.access = false</span>
 
-# Directory for the test projects
-# Default: projects
-# etf.projects.dir = projects
+<span class="tok-c"># Recreate the internal BaseX configuration file (.basex) on startup. &quot;true&quot; is</span>
+<span class="tok-c"># recommended.</span>
+<span class="tok-c"># Default: true</span>
+<span class="tok-c"># etf.bsx.recreate.config = true</span>
 
-# Directory which contains the reports styles
-# Default: reportstyles
-# etf.reportstyles.dir = reportstyles
+<span class="tok-c"># Possible values default/simplified . A simplified workflow enables the user</span>
+<span class="tok-c"># to start a test run without creating a test object.</span>
+<span class="tok-c"># Default: simplified</span>
+<span class="tok-c"># etf.workflows = simplified</span>
 
-# Directory which contains the test drivers
-# Default: td
-# etf.testdrivers.dir = td
+<span class="tok-c"># Help to improve our application by automatically reporting internal errors</span>
+<span class="tok-c"># (last user action, error message and stacktrace) to interactive instruments through</span>
+<span class="tok-c"># the third party service platform opbeat (see https://opbeat.com/about for more information).</span>
+<span class="tok-c"># Default: false</span>
+<span class="tok-c"># etf.errors.autoreport = false</span>
 
-# Directory that the application uses for text data tests
-# Default: testdata
-# etf.testdata.dir = testdata
 
-# Directory for the internal data source
-# Default: ds
-# etf.datasource.dir = ds
+<span class="tok-c">##################################################################################</span>
+<span class="tok-c">## Contact, legal notice, privacy statement</span>
+<span class="tok-c">##################################################################################</span>
+<span class="tok-c">#</span>
+<span class="tok-c"># Please note: you can add multiple lines by using the \ character at the end</span>
+<span class="tok-c"># of the line.</span>
+<span class="tok-c">#</span>
 
-# Directory that the application uses to store uploaded files
-# Default: http_uploads
-# etf.testdata.upload.dir = http_uploads
+<span class="tok-c"># Contact</span>
+<span class="tok-c"># etf.meta.contact.text = &lt;p&gt;Operator A&lt;/p&gt; \</span>
+<span class="tok-c">#                    &lt;p&gt;X Avenue&lt;/p&gt; \</span>
+<span class="tok-c">#                    &lt;p&gt;Fort Lauderdale&lt;/p&gt; \</span>
+<span class="tok-c">#                    &lt;p&gt;Broward County&lt;/p&gt; \</span>
+<span class="tok-c">#                    &lt;p&gt;Florida, USA&lt;/p&gt; \</span>
+<span class="tok-c">#                    &lt;br&gt;\</span>
+<span class="tok-c">#                    &lt;p&gt;Email: nielsen@a.com&lt;/p&gt;</span>
 
-# Directory that the application uses to backup files
-# Default: bak
-# etf.backup.dir = bak</code></pre>
+<span class="tok-c"># Disclaimer shown under Legal notice</span>
+<span class="tok-c"># etf.meta.legalnotice.disclaimer.text = Disclaimer ...</span>
+
+<span class="tok-c"># Copyright notice only shown under Legal notice if Disclaimer is set!</span>
+<span class="tok-c"># etf.meta.legalnotice.copyrightnotice.text = Copyright notice ...</span>
+
+<span class="tok-c"># Privacy statement</span>
+<span class="tok-c"># etf.meta.privacystatement.text = Privacy statement ...</span>
+
+<span class="tok-c"># The link to the help page can be overridden with this property.</span>
+<span class="tok-c"># Default: http://docs.etf-validator.net</span>
+<span class="tok-c"># etf.help.page = http://docs.etf-validator.net</span>
+
+<span class="tok-c">#########################################</span>
+<span class="tok-c">## Directory properties</span>
+<span class="tok-c">#########################################</span>
+
+<span class="tok-c"># For all directories, paths can be set that are either absolute or</span>
+<span class="tok-c"># relative to the etf.dir. If the etf.dir is not specified it is</span>
+<span class="tok-c"># set to ../ relative to this configuration file.</span>
+
+<span class="tok-c"># Optional base path</span>
+<span class="tok-c"># Default: ../</span>
+<span class="tok-c"># etf.dir = /data/etf</span>
+
+<span class="tok-c"># Directory for the test projects</span>
+<span class="tok-c"># Default: projects</span>
+<span class="tok-c"># etf.projects.dir = projects</span>
+
+<span class="tok-c"># Directory which contains the reports styles</span>
+<span class="tok-c"># Default: reportstyles</span>
+<span class="tok-c"># etf.reportstyles.dir = reportstyles</span>
+
+<span class="tok-c"># Directory which contains the test drivers</span>
+<span class="tok-c"># Default: td</span>
+<span class="tok-c"># etf.testdrivers.dir = td</span>
+
+<span class="tok-c"># Directory that the application uses for text data tests</span>
+<span class="tok-c"># Default: testdata</span>
+<span class="tok-c"># etf.testdata.dir = testdata</span>
+
+<span class="tok-c"># Directory for the internal data source</span>
+<span class="tok-c"># Default: ds</span>
+<span class="tok-c"># etf.datasource.dir = ds</span>
+
+<span class="tok-c"># Directory that the application uses to store uploaded files</span>
+<span class="tok-c"># Default: http_uploads</span>
+<span class="tok-c"># etf.testdata.upload.dir = http_uploads</span>
+
+<span class="tok-c"># Directory that the application uses to backup files</span>
+<span class="tok-c"># Default: bak</span>
+<span class="tok-c"># etf.backup.dir = bak</span></code></pre>
 </div>
 </div>
 </div>
@@ -808,8 +812,9 @@ The GmlGeoX module will be automatically reinstalled.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-05-24 10:31:12 CEST
+Last updated 2019-10-28 12:14:31 +0100
 </div>
 </div>
+<link rel="stylesheet" href="../stylesheets/pygments-autumn.css">
 </body>
 </html>
